@@ -2172,3 +2172,4 @@ local Scripts = Window:CreateTab("🧾 Scripts", 4483362458)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/vansh2742ggs-commits/VanshJi/refs/heads/main/ErYxscript.lua"))() end })
 
 --📜 Credits Scripts:CreateParagraph({ Title = "Credits", Content = "ErYx (VaNsH Bap ey OK?)\nMade for Delta Android Executor"
+end
