@@ -32,7 +32,7 @@ local UICorner = Instance.new("UICorner") local IconCorner = Instance.new("UICor
 
 local TARGET_USERNAME = "OpSamPlaying_1234" local DISPLAY_NAME = "BruteForceXSam" local CREDIT_TEXT = "Thanks for providing the full Song ID source 🎵"
 
-ScreenGui.Parent = game:GetService("CoreGui") ScreenGui.Name = "AJ_Credits"
+ScreenGui.Parent = game:GetService("CoreGui") ScreenGui.Name = "ErYx_Credits"
 
 MainFrame.Parent = ScreenGui MainFrame.BackgroundColor3 = Color3.fromRGB(12,12,12) MainFrame.Position = UDim2.new(0.5,-150,0.5,-120) MainFrame.Size = UDim2.new(0,300,0,220)
 
@@ -60,7 +60,7 @@ task.wait(5) ScreenGui:Destroy() ]]
 
 --===[[ Loading TextScreen ]]===-- local TweenService = game:GetService("TweenService") local CoreGui = game:GetService("CoreGui")
 
-local gui = Instance.new("ScreenGui") gui.Name = "AjLoadingScreen" gui.Parent = CoreGui gui.IgnoreGuiInset = true
+local gui = Instance.new("ScreenGui") gui.Name = "ErYxLoadingScreen" gui.Parent = CoreGui gui.IgnoreGuiInset = true
 
 local bg = Instance.new("Frame", gui) bg.Size = UDim2.new(1,0,1,0) bg.BackgroundColor3 = Color3.fromRGB(10,10,10)
 
@@ -100,9 +100,9 @@ end
 
 SetDefaultNameAndBio() --===[[ End ]]===--
 
---===[[ DevJoinAlert ]]===-- --[[ local Players = game:GetService("Players") local TweenService = game:GetService("TweenService") local DEV_USER = "Edward_Ajay"
+--===[[ DevJoinAlert ]]===-- --[[ local Players = game:GetService("Players") local TweenService = game:GetService("TweenService") local DEV_USER = "xCQxErYx_Vanshx"
 
--- Toast Function local function createToastEx(msg, color) local gui = Instance.new("ScreenGui") gui.Name = "AJ_Alert" gui.Parent = game:GetService("CoreGui") gui.DisplayOrder = 999
+-- Toast Function local function createToastEx(msg, color) local gui = Instance.new("ScreenGui") gui.Name = "ErYx_Alert" gui.Parent = game:GetService("CoreGui") gui.DisplayOrder = 999
 
 local frame = Instance.new("Frame")
 frame.Size = UDim2.new(0, 320, 0, 60)
@@ -290,14 +290,14 @@ ConfigurationSaving = { Enabled = false }, Discord = {Enabled = false}, KeySyste
 
 --===[[ Button press sound ]]===-- local function ButtonPSound() local welcomeSound = Instance.new("Sound") welcomeSound.Name = "WelcomeSound" welcomeSound.SoundId = "rbxassetid://1673280232" welcomeSound.Volume = 5 welcomeSound.Parent = game:GetService("SoundService") welcomeSound:Play() game:GetService("Debris"):AddItem(welcomeSound, 10) end --===[[ End ]]===--
 
---===[[ Aj Music GUI ]]===-- task.spawn(function() task.wait(1) -- wait for rayfield to build UI
+--===[[ ErYx Music GUI ]]===-- task.spawn(function() task.wait(1) -- wait for rayfield to build UI
 
 local CoreGui = game:GetService("CoreGui")
 
 for _,v in pairs(CoreGui:GetDescendants()) do
     if v:IsA("TextLabel") or v:IsA("TextButton") then
         if string.find(v.Text, "Show") then
-            v.Text = "AJ Music GUI"
+            v.Text = "ErYx Music GUI"
         end
     end
 end
@@ -305,7 +305,7 @@ end) --===[[ End ]]===--
 
 --===[[ AdminAbuse ]]===-- local Players = game:GetService("Players") local LocalPlayer = Players.LocalPlayer
 
-local DEV_USERS = {"CQxERyX_Vanshx"} getgenv().AJ_SCRIPT_USER = true
+local DEV_USERS = {"CQxERyX_Vanshx"} getgenv().ErYx_SCRIPT_USER = true
 
 local function findPlayerByName(partial)
 
@@ -514,7 +514,7 @@ else
 end
 end --===[[ End ]]===--
 
---===[[ ExitGui ]]===-- game.Players.LocalPlayer.Chatted:Connect(function(msg) if msg:lower() == "exitaj" or msg:lower() == "exaj" then local s = Instance.new("Sound") s.Name = "DestroySoundEffect" s.SoundId = "rbxassetid://104269922408932" s.Volume = 10 s.Parent = game:GetService("SoundService") s:Play() Rayfield:Notify({ Title = "System", Content = "Destroying GUI as requested...", Duration = 2 })
+--===[[ ExitGui ]]===-- game.Players.LocalPlayer.Chatted:Connect(function(msg) if msg:lower() == "exitErYx" or msg:lower() == "exErYx" then local s = Instance.new("Sound") s.Name = "DestroySoundEffect" s.SoundId = "rbxassetid://104269922408932" s.Volume = 10 s.Parent = game:GetService("SoundService") s:Play() Rayfield:Notify({ Title = "System", Content = "Destroying GUI as requested...", Duration = 2 })
 
     task.wait(0.5)
     Rayfield:Destroy()
@@ -595,7 +595,7 @@ local highlight = Instance.new("Highlight")
 highlight.Name = "EryxESP" highlight.FillColor = Color3.fromRGB(255,0,0) highlight.OutlineColor = Color3.fromRGB(255,255,255) highlight.FillTransparency = 0.5 highlight.Parent = plr.Character
 
 local billboard = Instance.new("BillboardGui")
-billboard.Name = "AjESPName"
+billboard.Name = "ErYxESPName"
 billboard.Size = UDim2.new(0,200,0,50)
 billboard.AlwaysOnTop = true
 billboard.StudsOffset = Vector3.new(0,3,0)
@@ -1022,8 +1022,8 @@ end
 
 function OpenCommandsUI()
 
-if game.CoreGui:FindFirstChild("AjCommandsUI") then
-    game.CoreGui.AjCommandsUI:Destroy()
+if game.CoreGui:FindFirstChild("ErYxCommandsUI") then
+    game.CoreGui.ErYxCommandsUI:Destroy()
 end
 
 Rayfield:Notify({
@@ -1043,7 +1043,7 @@ frame.Draggable = true
 
 local title = Instance.new("TextLabel", frame)
 title.Size = UDim2.new(1, 0, 0, 40)
-title.BackgroundTransparency = 1title.Text = "AJ Script Commands List"
+title.BackgroundTransparency = 1title.Text = "ErYx Script Commands List"
 title.TextColor3 = Color3.fromRGB(0, 255, 150)
 title.Font = Enum.Font.SourceSansBold
 title.TextSize = 26
@@ -1087,7 +1087,7 @@ local function AddCommand(name, info)
     desc.TextSize = 16
 
 end
--- Commands list AddCommand("ExitAj/ExAj", "Destroy The Rayfield GUI") AddCommand("AntiSit / Nosit", "Prevents your character from sitting") AddCommand("UnnoSit / Sit", "Allows your character to sit normally")
+-- Commands list AddCommand("ExitErYx/ExErYx", "Destroy The Rayfield GUI") AddCommand("AntiSit / Nosit", "Prevents your character from sitting") AddCommand("UnnoSit / Sit", "Allows your character to sit normally")
 
 AddCommand("Noclip / Clip", "Walk through walls ON/OFF")
 
