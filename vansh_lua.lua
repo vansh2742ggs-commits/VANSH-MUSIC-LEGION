@@ -1,4 +1,5 @@
-# VANSH-MUSIC-LEGION===[[ Updates UI ]]===-- local ScreenGui = Instance.new("ScreenGui") local MainFrame = Instance.new("Frame") local Title = Instance.new("TextLabel") local ProblemText = Instance.new("TextLabel") local ExitBtn = Instance.new("TextButton") local UICorner = Instance.new("UICorner")
+--[[ VANSH-MUSIC-LEGION Updates UI ]]
+local ScreenGui = Instance.new("ScreenGui") 
 
 local DevTitle = Instance.new("TextLabel") local DevFrame = Instance.new("Frame") local DevIcon = Instance.new("ImageLabel") local DevName = Instance.new("TextLabel") local DevUser = Instance.new("TextLabel") local DevInsta = Instance.new("TextLabel") local IconCorner = Instance.new("UICorner") MainFrame.Name = "MainFrame" MainFrame.Parent = ScreenGui MainFrame.BackgroundColor3 = Color3.fromRGB(12, 12, 12) MainFrame.Position = UDim2.new(0.5, -150, 0.5, -140) MainFrame.Size = UDim2.new(0, 300, 0, 280) MainFrame.Active = true MainFrame.Draggable = true
 
